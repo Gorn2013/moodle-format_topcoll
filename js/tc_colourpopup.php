@@ -49,14 +49,15 @@ class MoodleQuickForm_tccolourpopup extends HTML_QuickForm_text {
     public $_helpbutton = '';
     public $_hiddenLabel = false;
     
-    /** PHP7 constructor*/
+ 
+  /** added PHP7 constructor*/
     
     public function __construct($elementname = null, $elementlabel = null, $attributes = null, $options = null) {
     	parent::__construct($elementname, $elementlabel, $attributes);
     	$this->_type = 'colourtext';
     }
 
-    public function __construct($elementname = null, $elementlabel = null, $attributes = null, $options = null) {
+    public function MoodleQuickForm_tccolourpopup($elementname = null, $elementlabel = null, $attributes = null, $options = null) {
         parent::__construct($elementname, $elementlabel, $attributes);
         $this->_type = 'colourtext';
     }
